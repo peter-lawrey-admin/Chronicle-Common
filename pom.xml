@@ -30,7 +30,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>chronicle-common</artifactId>
-    <version>2.0.11b-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>OpenHFT/Chronicle-Common</name>
     <description>Chronicle-Common</description>
 
@@ -45,66 +45,10 @@
                 <scope>import</scope>
             </dependency>
 
-            <dependency>
-                <groupId>net.openhft</groupId>
-                <artifactId>lang</artifactId>
-                <version>6.4.14-SNAPSHOT</version>
-            </dependency>
-
-            <dependency>
-                <groupId>net.openhft</groupId>
-                <artifactId>affinity</artifactId>
-                <version>2.1.2</version>
-            </dependency>
-
-            <dependency>
-                <groupId>net.openhft</groupId>
-                <artifactId>compiler</artifactId>
-                <version>2.2.0</version>
-            </dependency>
-
-            <dependency>
-                <groupId>xstream</groupId>
-                <artifactId>xstream</artifactId>
-                <version>1.2.2</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.codehaus.jettison</groupId>
-                <artifactId>jettison</artifactId>
-                <version>1.3.6</version>
-            </dependency>
-
         </dependencies>
 
     </dependencyManagement>
     <dependencies>
-
-
-        <dependency>
-            <groupId>xstream</groupId>
-            <artifactId>xstream</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.codehaus.jettison</groupId>
-            <artifactId>jettison</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>net.openhft</groupId>
-            <artifactId>compiler</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>net.openhft</groupId>
-            <artifactId>lang</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>com.intellij</groupId>
@@ -125,24 +69,6 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>net.openhft</groupId>
-            <artifactId>affinity</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava-testlib</artifactId>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -158,7 +84,7 @@
                     </checkinComment>
                     <content>${project.reporting.outputDirectory}</content>
                     <skipDeletedFiles>true</skipDeletedFiles>
-                    <pubScmUrl>scm:git:git@github.com:OpenHFT/Chronicle-Map</pubScmUrl>
+                    <pubScmUrl>scm:git:git@github.com:OpenHFT/Chronicle-Common</pubScmUrl>
                     <scmBranch>gh-pages</scmBranch>
                 </configuration>
             </plugin>
@@ -168,7 +94,7 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
                     <links>
-                        <link>http://openhft.github.io/Chronicle-Map/apidocs/</link>
+                        <link>http://openhft.github.io/Chronicle-Common/apidocs/</link>
                     </links>
                     <excludePackageNames>net.openhft.chronicle.hash.serialization.internal
                     </excludePackageNames>
@@ -179,9 +105,9 @@
     </build>
 
     <scm>
-        <url>scm:git:git@github.com:OpenHFT/Chronicle-Map.git</url>
-        <connection>scm:git:git@github.com:OpenHFT/Chronicle-Map.git</connection>
-        <developerConnection>scm:git:git@github.com:OpenHFT/Chronicle-Map.git</developerConnection>
+        <url>scm:git:git@github.com:OpenHFT/Chronicle-Common.git</url>
+        <connection>scm:git:git@github.com:OpenHFT/Chronicle-Common.git</connection>
+        <developerConnection>scm:git:git@github.com:OpenHFT/Chronicle-Common.git</developerConnection>
         <tag>master</tag>
     </scm>
 
