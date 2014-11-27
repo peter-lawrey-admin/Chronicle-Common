@@ -28,7 +28,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>chronicle-common</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>OpenHFT/Chronicle-Common</name>
     <description>Chronicle-Common</description>
 
@@ -106,7 +106,7 @@
         <url>scm:git:git@github.com:OpenHFT/Chronicle-Common.git</url>
         <connection>scm:git:git@github.com:OpenHFT/Chronicle-Common.git</connection>
         <developerConnection>scm:git:git@github.com:OpenHFT/Chronicle-Common.git</developerConnection>
-        <tag>chronicle-common-1.0.0</tag>
+        <tag>master</tag>
     </scm>
 
 </project>
