@@ -8,3 +8,5 @@
 *.war
 *.ear
 *.iml
+
+atlassian-ide-plugin.xml

@@ -43,18 +43,23 @@
                 <scope>import</scope>
             </dependency>
 
+            <dependency>
+                <groupId>net.openhft</groupId>
+                <artifactId>lang</artifactId>
+                <version>6.4.15</version>
+            </dependency>
+
         </dependencies>
 
     </dependencyManagement>
     <dependencies>
 
         <dependency>
-            <groupId>com.intellij</groupId>
-            <artifactId>annotations</artifactId>
+            <groupId>net.openhft</groupId>
+            <artifactId>lang</artifactId>
         </dependency>
 
         <!-- test dependencies -->
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -94,7 +99,7 @@
                     <links>
                         <link>http://openhft.github.io/Chronicle-Common/apidocs/</link>
                     </links>
-                    <excludePackageNames>net.openhft.chronicle.hash.serialization.internal
+                    <excludePackageNames>
                     </excludePackageNames>
                 </configuration>
             </plugin>
