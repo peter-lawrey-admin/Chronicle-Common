@@ -30,7 +30,7 @@ import java.nio.channels.spi.AbstractSelectableChannel;
 import java.util.Set;
 
 /**
- * Wrapper for {@link java.nio.channels.Selector}.
+ * Wrapper for {@link java.nio.channels.Selector}
  *
  * <p> Examples of usage:
  *
