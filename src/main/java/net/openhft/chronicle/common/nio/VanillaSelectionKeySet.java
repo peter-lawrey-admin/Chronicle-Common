@@ -26,13 +26,12 @@ import java.util.Arrays;
 import java.util.Iterator;
 
 /**
- * References:
- * - Netty's SelectedSelectionKeySet
- *     https://github.com/real-logic/Aeron/blob/master/aeron-driver/src/main/java/uk/co/real_logic/aeron/driver/NioSelectedKeySet.java
- * - Aeron's NioSelectedKeySet
- *     https://github.com/netty/netty/blob/master/transport/src/main/java/io/netty/channel/nio/SelectedSelectionKeySet.java
+ * Fix handling of HashSet for {@link java.nio.channels.Selector}
  *
- * Assumes single threaded usage.
+ * <p>References:
+ *
+ * <p><a href="https://github.com/real-logic/Aeron/blob/master/aeron-driver/src/main/java/uk/co/real_logic/aeron/driver/NioSelectedKeySet.java">Aeron - SelectionKey</a>
+ * <p><a href="https://github.com/netty/netty/blob/master/transport/src/main/java/io/netty/channel/nio/SelectedSelectionKeySet.java">Netty - SelectionKey</a>
  */
 public class VanillaSelectionKeySet extends AbstractSet<SelectionKey> {
     public static final int NB_KEYS_SMALL = 16;

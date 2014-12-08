@@ -17,11 +17,35 @@
  */
 package net.openhft.chronicle.common.nio;
 
-
 import java.io.IOException;
 import java.nio.channels.SelectionKey;
 
-public interface VanillaSelectionKeyHandler {
-    public void onKey(final SelectionKey key)
-        throws IOException;
+public class VanillaSelectionKeyAdapter implements VanillaSelectionKeyHandler {
+    @Override
+    public void onKey(final SelectionKey key) throws IOException {
+        if(key.isAcceptable()) {
+            onAccept(key);
+        }
+        if(key.isConnectable()) {
+            onConnect(key);
+        }
+        if(key.isReadable()) {
+            onRead(key);
+        }
+        if(key.isWritable()) {
+            onWrite(key);
+        }
+    }
+
+    protected void onConnect(final SelectionKey key) throws IOException {
+    }
+
+    protected void onAccept(final SelectionKey key) throws IOException {
+    }
+
+    protected void onRead(final SelectionKey key) throws IOException {
+    }
+
+    protected void onWrite(final SelectionKey key) throws IOException {
+    }
 }
