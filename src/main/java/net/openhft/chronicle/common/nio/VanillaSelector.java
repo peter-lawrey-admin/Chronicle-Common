@@ -44,7 +44,7 @@ import java.util.Set;
  *     selector.open();
  *     selector.register(server, SelectionKey.OP_ACCEPT);
  *
- *     for(int i=0; i<1000; i++) {
+ *     for(int i=0; i&lt;1000; i++) {
  *         selector.selectAndProcess((final SelectionKey key) ->
  *             if(key.isAcceptable()) {
  *                 startClient(
