@@ -44,8 +44,8 @@ import java.util.Set;
  *     selector.open();
  *     selector.register(server, SelectionKey.OP_ACCEPT);
  *
- *     for(int i=0; i&lt;1000; i++) {
- *         selector.selectAndProcess((final SelectionKey key) ->
+ *     while(true) {
+ *         selector.selectAndProcess((final SelectionKey key) -&gt;
  *             if(key.isAcceptable()) {
  *                 startClient(
  *                     ((ServerSocketChannel)key.channel()).accept()
