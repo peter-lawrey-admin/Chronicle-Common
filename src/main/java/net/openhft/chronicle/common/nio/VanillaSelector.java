@@ -112,6 +112,11 @@ public class VanillaSelector implements Closeable {
         return this;
     }
 
+    public VanillaSelector register(@NotNull AbstractSelectableChannel channel, int ops, Object attachment) throws IOException {
+        channel.register(this.selector, ops, attachment);
+        return this;
+    }
+
     public VanillaSelector deregister(@NotNull AbstractSelectableChannel channel, int ops) throws IOException {
         SelectionKey selectionKey = channel.keyFor(this.selector);
         if (selectionKey != null) {
